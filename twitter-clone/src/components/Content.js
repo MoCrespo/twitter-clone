@@ -10,6 +10,10 @@ function Content() {
            </div>
            <TweetBox />
            <Tweet />
+           <Tweet />
+           <Tweet />
+           <Tweet />
+
         </div>
     )
 }
