@@ -3,9 +3,9 @@ import './SidebarOptions.css'
 
 function SidebarOptions({ active, text, Icon }) {
     return (
-        <div className={`sidebarOptions ${active && 'sidebarOptions--active'}`}>
+        <div className={`sidebarOption ${active && 'sidebarOption--active'}`}>
             <Icon />
-            <h3>{text}</h3>
+            <h2>{text}</h2>
         </div>
     )
 }
