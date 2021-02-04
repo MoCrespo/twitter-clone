@@ -1,6 +1,7 @@
 import './App.css';
 import Sidebar  from './components/Sidebar'
 import Content from './components/Content'
+import Widgets from './components/Widgets'
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
       <Sidebar />
 
       <Content />
+
+      <Widgets />
     </div>
   );
 }
