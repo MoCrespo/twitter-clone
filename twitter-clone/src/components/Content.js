@@ -9,6 +9,7 @@ function Content() {
                <h2>Home</h2>
            </div>
            <TweetBox />
+           <Tweet />
         </div>
     )
 }
