@@ -3,6 +3,8 @@
     text-align: center;
     cursor: pointer;
     padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
   .sidebarOption:hover {
@@ -20,8 +22,15 @@
     font-weight: 800;
     font-size: 20px;
     margin-right: 20px;
+    margin-left: 10px;
   }
   
   .sidebarOption--active {
     color: var(--twitter-color);
+  }
+
+  @media screen and (max-width:480px){
+    .sidebarOption > h2 {
+      display: none;
+    }
   }

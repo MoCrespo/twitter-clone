@@ -5,10 +5,11 @@ import Widgets from './components/Widgets'
 
 function App() {
   return (
-    <div className="app">
+    <div className="app container">
+
       <Sidebar />
 
-      <Content />
+      <Content  />
 
       <Widgets />
     </div>
