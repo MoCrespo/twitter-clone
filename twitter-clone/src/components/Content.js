@@ -15,7 +15,7 @@ function Content() {
   }, []);
 
   return (
-    <div className="content">
+    <div className="content ">
       <div className="content__header">
         <h2>Home</h2>
       </div>

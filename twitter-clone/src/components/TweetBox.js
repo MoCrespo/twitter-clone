@@ -25,7 +25,7 @@ function TweetBox() {
   };
 
   return (
-    <div className="tweetBox">
+    <div className="tweetBox ">
       <form>
         <div className="tweetBox__input">
           <Avatar src="" />

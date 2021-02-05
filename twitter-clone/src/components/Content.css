@@ -27,3 +27,19 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+
+  @media screen and (max-width:1090px){
+      .content{
+          flex: 0.7;
+      }
+  }
+  @media screen and (max-width:680px) {
+      .content{
+          flex: 1;
+      }
+  }
+  @media screen and (max-width:600px){
+      .content {
+          min-width: 100%;
+      }
+  }

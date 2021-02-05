@@ -12,6 +12,7 @@
   
   .tweet__body > img {
     border-radius: 20px;
+    max-width: 500px;
   }
   
   .tweet__footer {
@@ -43,4 +44,10 @@
   
   .tweet__avatar {
     padding: 20px;
+  }
+
+  @media screen and (max-width:600px) {
+    .tweet__body > img{
+      max-width: 80%;
+    }
   }
