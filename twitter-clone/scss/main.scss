@@ -3,8 +3,9 @@
 @import './SideBarOptions';
 @import './content';
 @import './widgets';
-@import './tweet.scss';
-@import './tweetBox.scss';
+@import './tweet';
+@import './tweetBox';
+@import './login';
 
 
 *{
@@ -13,7 +14,7 @@
   
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -26,6 +27,11 @@
   }
 
 
+  .container{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 900px;
+  }
 
 .app {
     display: flex;
