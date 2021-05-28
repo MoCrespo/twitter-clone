@@ -10,7 +10,7 @@
     }
     &__input{
         margin: 25px auto;
-        height: 9vh;
+        height: 60px;
         position: relative;
         // border: 1px solid;
         // border-radius: 8px;
@@ -67,22 +67,18 @@
         font-size: 20px !important;
         width: 100%;
         padding: 15px auto !important;
-        height: 8vh;
+        height: 60px;
         text-transform: inherit !important;
     }
 
 
     &__footer{
         display: flex;
-        margin-top: 15px;
-        width: 100%;
+        margin-top: 10%;
+        justify-content: space-around;
         a{
             color: $primary-color;
-            font-size: 15px;
             text-decoration: inherit;
-            padding-left: 10px;
-            margin-left: 40px;
-
             &:hover{
                 text-decoration: underline;
             }

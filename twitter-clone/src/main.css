@@ -245,19 +245,121 @@
   margin-left: auto !important;
 }
 
+.login__twitterIcon {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 8px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.login h2 {
+  font-size: 50px;
+}
+
+.login__input {
+  margin: 25px auto;
+  height: 60px;
+  position: relative;
+}
+
+.login__input .form__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid;
+  border-radius: .5rem;
+  height: 100%;
+  width: 95%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  outline: none;
+  font-size: 20px;
+  background: none;
+  z-index: 1;
+}
+
+.login__input .form__label {
+  position: absolute;
+  left: .3rem;
+  top: 1rem;
+  padding: 0 .25rem;
+  background-color: #fff;
+  font-size: 20px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.login__input .form__input:focus + .form__label {
+  top: -.5rem;
+  left: .8rem;
+  color: #1A73E8;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.login__input .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+  top: -.5rem;
+  left: .8rem;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.login__input .form__input:focus {
+  border: 1.5px solid #1A73E8;
+}
+
+.login__button {
+  color: #e6ecf0 !important;
+  background: #50b7f5 !important;
+  border-radius: 50px !important;
+  font-weight: 900 !important;
+  font-size: 20px !important;
+  width: 100%;
+  padding: 15px auto !important;
+  height: 60px;
+  text-transform: inherit !important;
+}
+
+.login__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.login__footer a {
+  color: #1A73E8;
+  text-decoration: inherit;
+}
+
+.login__footer a:hover {
+  text-decoration: underline;
+}
+
 * {
   margin: 0;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 900px;
 }
 
 .app {
