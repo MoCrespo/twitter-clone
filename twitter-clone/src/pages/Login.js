@@ -1,31 +1,36 @@
 import React from 'react'
 import TwitterIcon from "@material-ui/icons/Twitter";
 import {Button} from '@material-ui/core'
-import {Link} from 'react-router-dom'
+import Forms from '../components/Forms'
 
 
 function Login() {
     return (
         <div className="login container">
-            <TwitterIcon className="login__twitterIcon" />
-            <h2>Login to twitter</h2>
-            <form>
-                <div className="login__input">
+            <TwitterIcon className="form__twitterIcon" />
+            <Forms title="Login to twitter" />
+            <form className="form">
+                <div className="form__div">
                     <input placeholder=" " className="form__input" type="text" />
-                    <label  class="form__label">phone or email or username</label>
+                    <section className="form__label">
+                        <Forms formLabel="phone or email or username" />
+                    </section>
+                    
                 </div>
-                <div className="login__input">
+                <div className="form__div">
                     <input placeholder=" " className="form__input" type="password" />
-                    <label  class="form__label">password</label>
+                    <section className="form__label">
+                        <Forms formLabel="password" />
+                    </section>
                 </div>
                 
-                <Button className="login__button" type="submit" >
+                <Button className="form__button" type="submit" >
                     Login
                 </Button>
             </form>
-                <div className="login__footer">
-                    <Link to="">Forget password?</Link>
-                    <Link to="">Sign in twitter</Link>
+                <div className="form__footer">
+                    <Forms link="Forget password?" linkTo="/" />
+                    <Forms link="Sign up Twitter" linkTo="/signup" />
                 </div>
             
         </div>
