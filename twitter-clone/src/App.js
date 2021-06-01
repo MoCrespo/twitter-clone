@@ -1,17 +1,28 @@
 import './main.css';
-import Sidebar  from './components/Sidebar'
-import Content from './components/Content'
-import Widgets from './components/Widgets'
+import Login from './pages/Login'
+import SignUp from './pages/SignUp'
+import Home from './pages/Home'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="app container">
+    <div className="app">
 
-      <Sidebar />
+      <Router>
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/signup">
+            <SignUp />
+          </Route>
+          <Route path="/">
+            <Home /> 
+          </Route>
+        </Switch>
+      </Router>
 
-      <Content  />
-
-      <Widgets />
+      
     </div>
   );
 }

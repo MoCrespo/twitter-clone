@@ -245,7 +245,7 @@
   margin-left: auto !important;
 }
 
-.login__twitterIcon {
+.form__twitterIcon {
   margin-top: 20px;
   margin-bottom: 30px;
   margin-left: 8px;
@@ -253,17 +253,17 @@
           transform: scale(2);
 }
 
-.login h2 {
+.login h2, .signUp h2 {
   font-size: 50px;
 }
 
-.login__input {
+.form__div {
   margin: 25px auto;
   height: 60px;
   position: relative;
 }
 
-.login__input .form__input {
+.form__input {
   position: absolute;
   top: 0;
   left: 0;
@@ -279,7 +279,7 @@
   z-index: 1;
 }
 
-.login__input .form__label {
+.form__label {
   position: absolute;
   left: .3rem;
   top: 1rem;
@@ -290,7 +290,7 @@
   transition: .3s ease-in-out;
 }
 
-.login__input .form__input:focus + .form__label {
+.form__input:focus + .form__label {
   top: -.5rem;
   left: .8rem;
   color: #1A73E8;
@@ -299,7 +299,7 @@
   z-index: 10;
 }
 
-.login__input .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+.form .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
   top: -.5rem;
   left: .8rem;
   font-size: 12px;
@@ -307,11 +307,11 @@
   z-index: 10;
 }
 
-.login__input .form__input:focus {
+.form__input:focus {
   border: 1.5px solid #1A73E8;
 }
 
-.login__button {
+.form__button {
   color: #e6ecf0 !important;
   background: #50b7f5 !important;
   border-radius: 50px !important;
@@ -323,7 +323,7 @@
   text-transform: inherit !important;
 }
 
-.login__footer {
+.form__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,12 +332,12 @@
       justify-content: space-around;
 }
 
-.login__footer a {
+.form__footer a {
   color: #1A73E8;
   text-decoration: inherit;
 }
 
-.login__footer a:hover {
+.form__footer a:hover {
   text-decoration: underline;
 }
 

@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import TweetBox from "./TweetBox";
-import Tweet from "./Tweet";
-import db from "./firebase";
-import FlipMove from "react-flip-move";
+// import Tweet from "./Tweet";
+// import db from "./firebase";
+// import FlipMove from "react-flip-move";
 
 function Content() {
-  const [tweets, setPosts] = useState([]);
+  // const [tweets, setPosts] = useState([]);
 
-  useEffect(() => {
-    db.collection("tweets").onSnapshot((snapshot) =>
-      setPosts(snapshot.docs.map((doc) => doc.data()))
-    );
-  }, []);
+  // useEffect(() => {
+  //   db.collection("tweets").onSnapshot((snapshot) =>
+  //     setPosts(snapshot.docs.map((doc) => doc.data()))
+  //   );
+  // }, []);
 
   return (
     <div className="content ">
@@ -21,7 +21,7 @@ function Content() {
 
       <TweetBox />
 
-      <FlipMove>
+      {/* <FlipMove>
         {tweets.map((tweet) => (
           <Tweet
             key={tweet.text}
@@ -33,7 +33,7 @@ function Content() {
             image={tweet.image}
           />
         ))}
-      </FlipMove>
+      </FlipMove> */}
     </div>
   );
 }
