@@ -1,0 +1,46 @@
+@include media-lg {
+    .content{
+        flex: 0.7;
+    }
+
+    .sidebar{
+        flex: 0;
+
+        &__twitterIcon{
+            transform: scale(1.5);
+            margin-left: 10px;
+        }
+
+        &__tweet{
+           max-width: 10%;
+           margin-left: -10px !important;
+        }
+    }
+    .sidebarOption{
+        &__icon{
+            transform: scale(1.2);
+            margin-left: -5px;
+        }
+        
+        h2{
+            display: none;
+        }
+    }
+}
+@include media-md{
+    .widgets{
+        display: none;
+    }
+    .content{
+        flex: 1;
+    }
+}
+
+@include media-sm{
+    .sidebar{
+        display: none;
+    }
+    .content{
+        border-left: 1px solid $twitter-background;
+    }
+}

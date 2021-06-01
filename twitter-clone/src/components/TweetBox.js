@@ -1,27 +1,27 @@
 import React, { useState } from "react";
 import { Avatar, Button } from "@material-ui/core";
-import db from "./firebase";
+// import db from "./firebase";
 
 function TweetBox() {
   const [tweetMessage, setTweetMessage] = useState("");
   const [tweetImage, setTweetImage] = useState("");
 
-  const sendTweet = (e) => {
-    e.preventDefault();
+  // const sendTweet = (e) => {
+  //   e.preventDefault();
 
-    db.collection("tweets").add({
-      displayName: "Mohamed Crespo",
-      username: "MoCrespo",
-      verified: true,
-      text: tweetMessage,
-      image: tweetImage,
-      avatar:
-        "",
-    });
+  //   db.collection("tweets").add({
+  //     displayName: "Mohamed Crespo",
+  //     username: "MoCrespo",
+  //     verified: true,
+  //     text: tweetMessage,
+  //     image: tweetImage,
+  //     avatar:
+  //       "",
+  //   });
 
-    setTweetMessage("");
-    setTweetImage("");
-  };
+  //   setTweetMessage("");
+  //   setTweetImage("");
+  // };
 
   return (
     <div className="tweetBox ">
@@ -44,7 +44,7 @@ function TweetBox() {
         />
 
         <Button
-          onClick={sendTweet}
+          // onClick={sendTweet}
           type="submit"
           className="tweetBox__tweetButton"
         >

@@ -5,7 +5,9 @@
 @import './widgets';
 @import './tweet';
 @import './tweetBox';
-@import './login';
+@import './forms';
+@import './home';
+@import './responsive';
 
 
 *{
@@ -33,15 +35,7 @@
     max-width: 900px;
   }
 
-.app {
-    display: flex;
-    height: 100vh;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 10px;
-    box-sizing: border-box;
-}
+
 input{
     outline: none;
 }

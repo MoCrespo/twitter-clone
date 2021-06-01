@@ -1,3 +1,24 @@
 $primary-color:#1A73E8;
 $twitter-color: #50b7f5;
 $twitter-background: #e6ecf0;
+
+
+@mixin media-sm {
+    @media screen  and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen  and (max-width: 800px)  {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (max-width:1024px) {
+        @content;
+    }
+}
+
+
