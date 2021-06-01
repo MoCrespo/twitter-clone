@@ -13,19 +13,19 @@ function SignUp() {
                 <div className="form__div">
                     <input placeholder=" " className="form__input" type="text" />
                     <section className="form__label">
-                        <Forms formLabel="username" />
+                        <Forms formLabel="Username" />
                     </section>    
                 </div>
                 <div className="form__div">
                     <input placeholder=" " className="form__input" type="text" />
                     <section className="form__label">
-                        <Forms formLabel="email" />
+                        <Forms formLabel="Email" />
                     </section>    
                 </div>
                 <div className="form__div">
                     <input placeholder=" " className="form__input" type="password" />
                     <section className="form__label">
-                        <Forms formLabel="password" />
+                        <Forms formLabel="Password" />
                     </section>
                 </div>
                 <div className="form__div">

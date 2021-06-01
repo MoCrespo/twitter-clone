@@ -13,14 +13,14 @@ function Login() {
                 <div className="form__div">
                     <input placeholder=" " className="form__input" type="text" />
                     <section className="form__label">
-                        <Forms formLabel="phone or email or username" />
+                        <Forms formLabel="Email" />
                     </section>
                     
                 </div>
                 <div className="form__div">
                     <input placeholder=" " className="form__input" type="password" />
                     <section className="form__label">
-                        <Forms formLabel="password" />
+                        <Forms formLabel="Password" />
                     </section>
                 </div>
                 
