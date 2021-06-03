@@ -291,6 +291,16 @@
   transition: .3s ease-in-out;
 }
 
+.form__showpassword {
+  position: absolute;
+  right: .5rem;
+  top: 1rem;
+  z-index: 2;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .form__input:focus + .form__label {
   top: -.5rem;
   left: .8rem;
@@ -328,7 +338,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10%;
+  margin-top: 5%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -346,13 +356,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -424,6 +428,19 @@ code {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 900px;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 input {

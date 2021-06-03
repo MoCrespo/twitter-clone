@@ -1,30 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TwitterIcon from "@material-ui/icons/Twitter";
 import {Button} from '@material-ui/core'
 import Forms from '../components/Forms'
+import ShowPassword from '../components/ShowPassword';
 
 
 function Login() {
+    // const [name, setName] = useState('');
+    // const nameChange = e => setName(e.target.value);
+
     return (
         <div className="login container">
             <TwitterIcon className="form__twitterIcon" />
             <Forms title="Login to twitter" />
             <form className="form">
                 <div className="form__div">
-                    <input placeholder=" " className="form__input" type="text" />
+                    <input placeholder=" "   className="form__input" type="email" />
                     <section className="form__label">
                         <Forms formLabel="Email" />
                     </section>
                     
                 </div>
                 <div className="form__div">
-                    <input placeholder=" " className="form__input" type="password" />
-                    <section className="form__label">
-                        <Forms formLabel="Password" />
-                    </section>
+                    <ShowPassword />
                 </div>
                 
-                <Button className="form__button" type="submit" >
+                
+                <Button  className="form__button" type="submit" >
                     Login
                 </Button>
             </form>
