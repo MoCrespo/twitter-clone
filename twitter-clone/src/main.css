@@ -290,6 +290,16 @@
   transition: .3s ease-in-out;
 }
 
+.form__showpassword {
+  position: absolute;
+  right: .5rem;
+  top: 1rem;
+  z-index: 2;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .form__input:focus + .form__label {
   top: -.5rem;
   left: .8rem;
@@ -327,7 +337,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10%;
+  margin-top: 5%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -339,6 +349,13 @@
 
 .form__footer a:hover {
   text-decoration: underline;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 * {

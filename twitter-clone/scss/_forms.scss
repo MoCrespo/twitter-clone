@@ -15,6 +15,9 @@
         margin: 25px auto;
         height: 60px;
         position: relative;
+
+        
+
     }
     &__input{
         position: absolute;
@@ -39,6 +42,19 @@
         background-color: #fff;
         font-size: 20px;
         transition: .3s ease-in-out;
+
+        
+        
+    }
+    &__showpassword{
+        position: absolute;
+        right: .5rem;
+        top: 1rem;
+        z-index: 2;
+        background: none;
+        border: none;
+        cursor: pointer;
+
     }
     &__input:focus + &__label{
         top: -.5rem;
@@ -74,7 +90,7 @@
 
 .form__footer{
     display: flex;
-    margin-top: 10%;
+    margin-top: 5%;
     justify-content: space-around;
     a{
         color: $primary-color;

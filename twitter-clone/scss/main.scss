@@ -6,8 +6,8 @@
 @import './tweet';
 @import './tweetBox';
 @import './forms';
-@import './login';
-@import './signUp';
+@import './home';
+
 
 
 *{
@@ -44,6 +44,7 @@
     padding: 0 10px;
     box-sizing: border-box;
 }
+
 input{
     outline: none;
 }

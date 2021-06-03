@@ -2,14 +2,23 @@ import React from 'react'
 import Forms from '../components/Forms' 
 import TwitterIcon from "@material-ui/icons/Twitter"
 import {Button} from '@material-ui/core'
+import ShowPassword from '../components/ShowPassword';
+
 
 
 function SignUp() {
+
     return (
         <div className="signUp container">
             <TwitterIcon className="form__twitterIcon" />
-            <Forms title="Create account" />
+            <Forms title="Create an account" />
             <form className="form">
+                <div className="form__div">
+                    <input placeholder=" " className="form__input" type="text" />
+                    <section className="form__label">
+                        <Forms formLabel="Full name" />
+                    </section>    
+                </div>
                 <div className="form__div">
                     <input placeholder=" " className="form__input" type="text" />
                     <section className="form__label">
@@ -17,22 +26,13 @@ function SignUp() {
                     </section>    
                 </div>
                 <div className="form__div">
-                    <input placeholder=" " className="form__input" type="text" />
+                    <input placeholder=" " className="form__input" type="email" />
                     <section className="form__label">
                         <Forms formLabel="Email" />
-                    </section>    
-                </div>
-                <div className="form__div">
-                    <input placeholder=" " className="form__input" type="password" />
-                    <section className="form__label">
-                        <Forms formLabel="Password" />
                     </section>
                 </div>
                 <div className="form__div">
-                    <input placeholder=" " className="form__input" type="password" />
-                    <section className="form__label">
-                        <Forms formLabel="Confirm password" />
-                    </section>
+                    <ShowPassword />
                 </div>
                 
                 <Button className="form__button" type="submit" >

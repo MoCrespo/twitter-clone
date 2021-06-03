@@ -5,7 +5,7 @@ import Content from '../components/Content'
 
 function Home() {
     return (
-        <div className="home container">
+        <div className="home">
             <Sidebar />
 
             <Content  />
