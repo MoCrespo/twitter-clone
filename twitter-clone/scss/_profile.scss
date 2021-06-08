@@ -1,0 +1,54 @@
+.profile{
+    display: flex;
+    width: 100%;
+    &__div{
+        flex: 0.5;
+        border: 1px solid $twitter-background;
+        min-width: fit-content;
+        margin: 20px;
+        margin-bottom: auto;
+
+        .profile__header{
+            display: flex;
+        }
+
+        .profile__body{
+            margin: 10px;
+
+            &Update{
+                margin-top: 30px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                color: $twitter-color;
+                border: 1px solid $twitter-color;
+                border-radius: 5px;
+                font-weight: bold;
+                padding: 8px;
+                background: none;
+                &:hover{
+                    color: $twitter-background;
+                    background: $twitter-color;
+                }
+            }
+
+            &Label{
+                margin-top: 10px;
+                .upload__picture{
+                    margin-top: 10px;
+                }
+            }
+
+            h4{
+                padding-bottom: 5px;
+                border-bottom: 1px solid $twitter-background;
+            }
+        }
+    }
+    &__avatar{
+      margin: 10px;
+    }
+    &__info{
+        margin:10px;
+    }
+    
+}
