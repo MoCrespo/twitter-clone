@@ -54,7 +54,7 @@ function SignUp() {
         }
         else if(data.success){
             console.log(data.success);
-            window.location.href = "http://localhost:3000/"
+            window.location.href = "https://twitter-clone-bycr.web.app"
             
         }
 

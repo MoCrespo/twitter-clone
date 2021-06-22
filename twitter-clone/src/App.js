@@ -22,7 +22,7 @@ function App() {
    
   const onLoad  = () => {
     if(userId.length === 0){
-      window.location.href = "http://localhost:3000/login"
+      window.location.href = "https://twitter-clone-bycr.web.app/login"
       return 
     }
   }
