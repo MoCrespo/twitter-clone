@@ -1,0 +1,105 @@
+.form__twitterIcon{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 8px;
+    transform: scale(2);
+}
+.login,.signUp{
+    h2{
+        font-size: 50px;
+    }
+}
+
+.form{
+    &__div{
+        margin: 25px auto;
+        height: 60px;
+        position: relative;
+
+        
+
+    }
+    &__input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid;
+        border-radius: .5rem;
+        height: 100%;
+        width: 95%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        outline: none;
+        font-size: 20px;
+        background: none;
+        z-index: 1;
+    }
+    &__label{
+        position: absolute;
+        left: .3rem;
+        top: 1rem;
+        padding:0 .25rem;
+        background-color: #fff;
+        font-size: 20px;
+        transition: .3s ease-in-out;
+
+        
+        
+    }
+    &__showpassword{
+        position: absolute;
+        right: .5rem;
+        top: 1rem;
+        z-index: 2;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+    }
+    &__input:focus + &__label{
+        top: -.5rem;
+        left: .8rem;
+        color: $primary-color;
+        font-size: 12px;
+        font-weight: 500;
+        z-index: 10;
+    }
+    .form__input:not(:placeholder-shown).form__input:not(:focus)+.form__label{
+        top: -.5rem;
+        left: .8rem;
+        font-size: 12px;
+        font-weight: 500;
+        z-index: 10;
+    }
+    &__input:focus{
+        border: 1.5px solid $primary-color;
+    }
+}
+
+.form__button{
+    color: $twitter-background !important;
+    background: $twitter-color !important;
+    border-radius: 50px !important;
+    font-weight: 900 !important;
+    font-size: 20px !important;
+    width: 100%;
+    padding: 15px auto !important;
+    height: 60px;
+    text-transform: inherit !important;
+}
+
+.form__footer{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+    a{
+        color: $primary-color;
+        text-decoration: inherit;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+

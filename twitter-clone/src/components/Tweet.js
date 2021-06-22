@@ -1,5 +1,4 @@
-import React, { forwardRef } from "react";
-import "./Tweet.css";
+import { forwardRef } from "react";
 import { Avatar } from "@material-ui/core";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
@@ -7,8 +6,9 @@ import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 
 
+
 const Tweet = forwardRef(
-  ({ displayName, username, verified, text, image, avatar }, ref) => {
+  ({ name, username, text, avatar, deleteIcon, onDelete  }, ref) => {
     return (
       <div className="tweet " ref={ref}>
         <div className="tweet__avatar">
@@ -18,18 +18,21 @@ const Tweet = forwardRef(
           <div className="tweet__header">
             <div className="tweet__headerText">
               <h3>
-                {displayName}{" "}
+                {name}{" "}
                 <span className="tweet__headerSpecial">
-                  {verified && <VerifiedUserIcon className="tweet__badge" />} @
+                 <VerifiedUserIcon className="tweet__badge" /> @
                   {username}
                 </span>
+                <button onClick={onDelete} className="tweet_headerDelete">
+                  {deleteIcon}
+                </button>
               </h3>
             </div>
             <div className="tweet__headerDescription">
               <p>{text}</p>
             </div>
           </div>
-          <img src={image} alt="" />
+          {/* <img  alt="" /> */}
           <div className="tweet__footer">
             <ChatBubbleOutlineIcon fontSize="small" />
             <RepeatIcon fontSize="small" />

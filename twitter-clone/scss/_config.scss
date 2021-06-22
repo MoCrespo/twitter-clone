@@ -1,0 +1,28 @@
+$primary-color:#1A73E8;
+$twitter-color: #50b7f5;
+$twitter-background: #e6ecf0;
+$disabled-color:#bdc3c7;
+$disabled-background: #2980b9;
+$delete-button: #e74c3c;
+$mobsidebar-color:#000 ;
+
+
+@mixin media-sm {
+    @media screen  and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen  and (max-width: 800px)  {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (max-width:1024px) {
+        @content;
+    }
+}
+
+
