@@ -1,11 +1,11 @@
 .profile{
     display: flex;
-    width: 100%;
+    width:100%;
     &__div{
         flex: 0.5;
         border: 1px solid $twitter-background;
-        min-width: fit-content;
-        margin: 20px;
+        // min-width: fit-content;
+        // margin: 20px;
         margin-bottom: auto;
 
         .profile__header{
@@ -45,7 +45,8 @@
         }
     }
     &__avatar{
-      margin: 10px;
+      margin: 25px;
+      transform: scale(2);
     }
     &__info{
         margin:10px;

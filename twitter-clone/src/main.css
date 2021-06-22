@@ -67,9 +67,6 @@
       -ms-flex: 0.5;
           flex: 0.5;
   border-right: 1px solid #e6ecf0;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   overflow-y: scroll;
   /* Hide scrollbar for Chrome, Safari and Opera */
   /* Hide scrollbar for IE, Edge and Firefox */
@@ -152,6 +149,7 @@
           align-items: flex-start;
   border-bottom: 1px solid #e6ecf0;
   padding-bottom: 10px;
+  max-width: 100%;
 }
 
 .tweet__body {
@@ -188,7 +186,17 @@
 
 .tweet__badge {
   font-size: 14px !important;
-  color: var(--twitter-color);
+  color: #50b7f5;
+}
+
+.tweet_headerDelete {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-right: 5px;
 }
 
 .tweet__headerSpecial {
@@ -199,6 +207,8 @@
 
 .tweet__avatar {
   padding: 20px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .tweetBox {
@@ -222,6 +232,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.tweetBox__inputAvatar {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .tweetBox__input input {
@@ -249,6 +264,11 @@
   height: 40px !important;
   margin-top: 20px !important;
   margin-left: auto !important;
+}
+
+.tweetBox__tweetButton:disabled {
+  background-color: #2980b9 !important;
+  color: #bdc3c7 !important;
 }
 
 .form__twitterIcon {
@@ -376,10 +396,6 @@
       -ms-flex: 0.5;
           flex: 0.5;
   border: 1px solid #e6ecf0;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  margin: 20px;
   margin-bottom: auto;
 }
 
@@ -424,7 +440,9 @@
 }
 
 .profile__avatar {
-  margin: 10px;
+  margin: 25px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .profile__info {
@@ -479,6 +497,34 @@
   .content {
     border-left: 1px solid #e6ecf0;
   }
+  .mob-sideBar {
+    display: block !important;
+  }
+}
+
+.mob-sideBar {
+  display: none;
+  position: fixed;
+  z-index: 900;
+  right: 10px;
+  top: 10px;
+}
+
+.mob-sideBar .icons {
+  opacity: 0.8;
+  background: #000;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.mob-sideBar .icons .icon {
+  color: white;
+  cursor: pointer;
+}
+
+.mob-sideBar .icons .icon :active {
+  color: #50b7f5;
 }
 
 * {

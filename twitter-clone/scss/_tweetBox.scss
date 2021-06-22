@@ -12,7 +12,9 @@
     &__input {
         padding: 20px;
         display: flex;
-
+      &Avatar{
+        transform: scale(1.2);
+      }
         input {
             flex: 1;
             margin-left: 20px;
@@ -38,6 +40,11 @@
         height: 40px !important;
         margin-top: 20px !important;
         margin-left: auto !important;
+
+        &:disabled{
+          background-color: $disabled-background !important;
+          color: $disabled-color !important;
+        }
       }
   }
   

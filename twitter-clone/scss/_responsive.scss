@@ -2,18 +2,23 @@
     .content,.profile__div{
         flex: 0.7;
     }
-
+    
+    
+    
+    
+    
+    
     .sidebar{
         flex: 0;
-
+        
         &__twitterIcon{
             transform: scale(1.5);
             margin-left: 10px;
         }
-
+        
         &__tweet{
-           max-width: 10%;
-           margin-left: -10px !important;
+            max-width: 10%;
+            margin-left: -10px !important;
         }
     }
     .sidebarOption{
@@ -34,6 +39,10 @@
     .content,.profile__div{
         flex: 1;
     }
+    
+    
+    
+    
 }
 
 @include media-sm{
@@ -43,4 +52,9 @@
     .content{
         border-left: 1px solid $twitter-background;
     }
+    .mob-sideBar{
+        display: block !important;
+    }
+    
+    
 }

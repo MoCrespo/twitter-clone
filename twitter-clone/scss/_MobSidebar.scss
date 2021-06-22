@@ -1,0 +1,23 @@
+.mob-sideBar{
+    display: none;
+    position: fixed;
+    z-index: 900;
+    right: 10px;
+    top: 10px;
+    
+    .icons{
+        opacity: 0.8;
+        background: $mobsidebar-color;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 5px;
+
+        .icon{
+            color: white;
+            cursor: pointer;
+            :active{
+                color: $twitter-color;
+            }
+        }
+    }
+}

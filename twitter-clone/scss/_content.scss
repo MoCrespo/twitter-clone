@@ -1,7 +1,7 @@
 .content {
     flex: 0.5;
     border-right: 1px solid $twitter-background;
-    min-width: fit-content;
+    // min-width: fit-content;
     overflow-y: scroll;
     &__header {
         position: sticky;
