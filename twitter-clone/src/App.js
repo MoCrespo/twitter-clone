@@ -3,9 +3,8 @@ import Login from './pages/Login'
 import SignUp from './pages/SignUp'
 import Home from './pages/Home'
 import Profile from './pages/Profile'
-import MobSidebar from './components/MobSidebar';
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Redirect  } from 'react-router-dom'
 
 function App() {
   const [users, getUser] = useState([]);
@@ -30,7 +29,6 @@ function App() {
   return (
     <div onLoad={onLoad} className="app">
         <Router>
-          <MobSidebar />
           <Switch>
             <Route path="/login" component={Login} />
             <Route path="/signup" component={SignUp} />
