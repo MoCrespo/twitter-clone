@@ -9,6 +9,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 function Content() {
   const [tweets, setTweets] = useState([]);
   const [users, getUser] = useState([]);
+  const [seconds, setSeconds] = useState(1);
     useEffect(() => {
         const json = localStorage.getItem('user')
         const savedUser = JSON.parse(json);
@@ -18,11 +19,18 @@ function Content() {
       }, []);
 
   useEffect(() => {
-    const getTweets = async () => {
-      const tweetFromServer = await fetchTweets()
-      setTweets(tweetFromServer)
-    }
-    getTweets()
+    const timer = setInterval(() => {
+
+      const getTweets = async () => {
+        const tweetFromServer = await fetchTweets()
+        setTweets(tweetFromServer)
+        setSeconds(seconds + 1)
+      }
+      getTweets()
+    }, 1000)
+    console.log(tweets)
+    
+    // return () => clearInterval(timer)
   }, []);
 
   // Fetch tweets 
@@ -31,7 +39,6 @@ function Content() {
     const res = await fetch(`${Api_Key}/tweets`)
     const data = await res.json()
 
-    console.log(data)
     return data
   }
 
@@ -52,8 +59,8 @@ function Content() {
       </div>
 
 
-      <TweetBox  />
-      <FlipMove>
+      <TweetBox />
+      <FlipMove >
         {tweets.map((tweet) => (
           <Tweet
           key={tweet.id}
@@ -61,12 +68,12 @@ function Content() {
           avatar={avatar}
           name={tweet.name}
           username={tweet.username}
-            deleteIcon={users.map((user) => (
-              tweet.user_id === user.id ? <DeleteIcon  fontSize='small' /> : false
+          deleteIcon={users.map((user) => (
+            tweet.user_id === user.id ? <DeleteIcon  fontSize='small' /> : false
             ))}
             onDelete={() => deleteTweet(tweet.id)}
-          />
-        ))}
+            />
+            ))}
       </FlipMove>
     </div>
   );

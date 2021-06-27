@@ -8,6 +8,8 @@ import {Avatar} from '@material-ui/core'
 import avatar from '../static/avatar/default.png';
 import DeleteIcon from '@material-ui/icons/Delete';
 import Api_Key from '../Api';
+import MobSidebar from '../components/MobSidebar'
+
 
 
 
@@ -65,6 +67,7 @@ function Profile() {
 
 
         <div className="profile">
+            <MobSidebar />
             <Sidebar />
                 <div className="profile__div">
                     <div className="profile__header">

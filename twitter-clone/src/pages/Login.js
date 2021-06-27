@@ -5,6 +5,8 @@ import Forms from '../components/Forms'
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import Api_Key from '../Api'
+import Domain from '../env'
+
 
 
 
@@ -54,10 +56,9 @@ function Login() {
                 email: data.email,
             };
             setUser([...user, newUser])
-            window.location.href = "http://localhost:3000/"
+            window.location.href = `${Domain}`
             
         };
-     
 }
     useEffect(() => {
         const json = JSON.stringify(user);
