@@ -4,7 +4,7 @@ import avatar from '../static/avatar/default.png'
 import Api_Key from '../Api'
 
 
-function TweetBox() {
+function TweetBox({update}) {
   const [tweetMessage, setTweetMessage] = useState("");
   // const [tweetImage, setTweetImage] = useState("");
   const [users, getUser] = useState([]);
@@ -34,13 +34,8 @@ function TweetBox() {
       })
       
       const data = await res.json()
-      refreshPage()
       return data
 
-    }
-
-    const refreshPage = () => {
-      window.location.reload(false);
     }
 
     newTweet()
@@ -73,7 +68,7 @@ function TweetBox() {
         /> */}
 
         <Button
-          onClick={sendTweet}
+          onClick={sendTweet}  
           disabled={!tweetMessage}
           type="submit"
           className="tweetBox__tweetButton"

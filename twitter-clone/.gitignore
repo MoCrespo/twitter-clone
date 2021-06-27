@@ -6,11 +6,14 @@
 .pnp.js
 .eslintcache
 Api.js
+env.js
 # testing
 /coverage
 
 # production
 /build
+/firebase
+.firebase
 
 # misc
 .DS_Store

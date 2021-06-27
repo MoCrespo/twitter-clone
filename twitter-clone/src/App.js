@@ -3,31 +3,12 @@ import Login from './pages/Login'
 import SignUp from './pages/SignUp'
 import Home from './pages/Home'
 import Profile from './pages/Profile'
-import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route, Redirect  } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-function App() {
-  const [users, getUser] = useState([]);
-    useEffect(() => {
-        const json = localStorage.getItem('user')
-        const savedUser = JSON.parse(json);
-        if (savedUser) {
-          getUser(savedUser);
-        }
-      }, []);
-  const userId = users.map((user) => {
-    return user.id
-    })
-   
-  const onLoad  = () => {
-    if(userId.length === 0){
-      window.location.href = "https://twitter-clone-bycr.web.app/login"
-      return 
-    }
-  }
-   
+
+function App() {   
   return (
-    <div onLoad={onLoad} className="app">
+    <div   className="app">
         <Router>
           <Switch>
             <Route path="/login" component={Login} />

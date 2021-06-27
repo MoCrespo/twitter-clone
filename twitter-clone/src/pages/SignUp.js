@@ -5,6 +5,7 @@ import {Button} from '@material-ui/core'
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import Api_Key from '../Api'
+import Domain from '../env';
 
 
 
@@ -53,12 +54,8 @@ function SignUp() {
             alert(data.error)
         }
         else if(data.success){
-            console.log(data.success);
-            window.location.href = "https://twitter-clone-bycr.web.app"
-            
+            window.location.href = `${Domain}`
         }
-
-            
         
     }
 
