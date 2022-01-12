@@ -26,6 +26,10 @@ const userSchema = new Schema({
   cover: {
     type: String,
   },
+  register_date: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 module.exports = User = mongoose.model("user", userSchema);
