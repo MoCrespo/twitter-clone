@@ -63,4 +63,14 @@ router.get("/user", auth, (req, res) => {
     .then((user) => res.json(user));
 });
 
+// @route get api/auth/id
+// @desc delete user
+// @access private
+
+router.delete("/:id", auth, (req, res) => {
+  User.deleteOne(req.param.id)
+    .then(() => res.json({ success: true }))
+    .catch((err) => res.status(404).json({ success: false }));
+});
+
 module.exports = router;
